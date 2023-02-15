@@ -1,0 +1,24 @@
+{
+  "name": "pureservice-technical-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilietonnessen/pureservice-technical-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilietonnessen/pureservice-technical-test/issues"
+  },
+  "homepage": "https://github.com/emilietonnessen/pureservice-technical-test#readme",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
