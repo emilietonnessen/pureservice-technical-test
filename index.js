@@ -61,3 +61,25 @@ fetchColors((error, colors) => {
     insertColorsToDOM(colors);
   }
 });
+
+// Fetch the colors from colors.json file
+const response = await fetch('./colors.json');
+const JSONColors = await response.json();
+
+// Restructure the colors fetched from colors.json to match the task description for task 5
+const convertColorsFromJsonFile = () => {
+  const colorsObject = {
+    colors: [],
+  };
+
+  for (const key in JSONColors) {
+    colorsObject.colors.push({
+      name: key,
+      rgba: JSONColors[key],
+    });
+  }
+
+  console.log('[colorsObject]', colorsObject);
+};
+
+convertColorsFromJsonFile();
